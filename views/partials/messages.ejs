@@ -1,0 +1,18 @@
+<% if(typeof errors != "undefined") { %>
+  <% errors.forEach(function(error){ %>
+    <p class="klaida"> <%= error.msg %> </p>
+  <% }); %>
+<% } %>
+
+
+<% if(success_msg != "") { %>
+  <p class="klaida"> <%= success_msg  %> </p>
+<% } %>
+
+<% if(error_msg != "") { %>
+<p class="klaida"> <%= error_msg   %> </p>
+<% } %>
+
+<% if(error != "") { %>
+  <p class="klaida"> <%= error %> </p>
+<% } %>

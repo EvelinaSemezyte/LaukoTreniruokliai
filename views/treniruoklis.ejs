@@ -1,0 +1,99 @@
+<%- include("partials/header") -%>
+<div class="container">
+  <div class="item-main-image">
+    <img src="/images/treniruoklisVisas.png" alt="">
+    <div class="name-center">
+      <h2> <%= name %> </h2>
+    </div>
+  </div>
+  <div class="item-info">
+    <div class="item-content item-text">
+      <h1 class="big-title">Universalus funkcionalumas </h1>
+      <p class="paragraph"><%= featurestext1 %></p>
+    </div>
+    <div class="item-image zoom">
+      <img src="<%= mob1 %>" alt="">
+    </div>
+  </div>
+  <div class="item-info">
+    <div class="item-content item-text">
+      <h1 class="big-title">Patikima konstrukcija</h1>
+      <p class="paragraph"><%= featurestext2 %></p>
+    </div>
+    <div class="item-image zoom">
+      <img src="<%= mob2 %>" alt="">
+    </div>
+  </div>
+  <div class="item-info">
+    <div class="item-content item-text">
+      <h1 class="big-title"> Ilgaamžis dizainas</h1>
+      <p class="paragraph"><%= featurestext3 %></p>
+    </div>
+    <div class="item-image zoom">
+      <img src="<%= mob3 %>" alt="">
+    </div>
+  </div>
+  <div class="item-info">
+    <div class="item-image">
+      <img class="mobile" src="/images/treniruoklisVisas.png" alt="">
+    </div>
+    <div class="item-text item-reservation">
+      <h1 class="big-title"><%= kaina %></h1>
+      <a href="/rezervacija"><button class="main-button" type="button" name="button">Užsakyti</button></a>
+    </div>
+  </div>
+  <div class="item-features">
+    <h1 class="big-title">Pratimai</h1>
+    <p class="paragraph"><%= paragraph %></p>
+    <div class="features">
+      <div class="left">
+        <img src="<%= pic1 %>" alt="">
+      </div>
+      <div class="right">
+        <p class="paragraph"><%= featurestext4 %></p>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="left">
+        <img src="<%= pic2 %>" alt="">
+      </div>
+      <div class="right">
+        <p class="paragraph"><%= featurestext5 %></p>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="left">
+        <img src="<%= pic3 %>" alt="">
+      </div>
+      <div class="right">
+        <p class="paragraph"><%= featurestext6 %></p>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="left">
+        <img src="<%= pic4 %>" alt="">
+      </div>
+      <div class="right">
+        <p class="paragraph"><%= featurestext7 %></p>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="left">
+        <img src="<%= pic5 %>" alt="">
+      </div>
+      <div class="right">
+        <p class="paragraph"><%= featurestext8 %></p>
+      </div>
+    </div>
+    <div class="item-info">
+      <h1 class="big-title">Video apžvalga</h1>
+      <iframe src="">
+      </iframe>
+    </div>
+  </div>
+
+  <%- include("partials/footer") -%>

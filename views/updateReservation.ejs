@@ -1,0 +1,125 @@
+  <%- include("partials/header-das") -%>
+  <div class="container">
+    <div class="item-page-reservation">
+      <h1 class="big-title">Atnaujinti užsakymą</h1>
+    </div>
+
+    <div class="item-reservation-form">
+      <form class="" action="/users/update/<%= id %>" method="post">
+        <div class="reservation-float">
+          <div class="reservation-model">
+            <div class="reservation-label">
+              <label class="small-heading">FITPOINT 8</label>
+            </div>
+            <div class="reservation-input">
+              <input type="number" name="fitpoint8" value="<%= fitpoint8 %>">
+              <p class="paragraph">vnt.</p>
+            </div>
+          </div>
+          <div class="reservation-model">
+            <div class="reservation-label">
+              <label class="small-heading">FITPOIN 6</label>
+            </div>
+            <div class="reservation-input">
+              <input type="number" name="fitpoint6" value="<%= fitpoint6 %>">
+              <p class="paragraph">vnt.</p>
+            </div>
+          </div>
+
+          <div class="reservation-model">
+            <div class="reservation-label">
+              <label class="small-heading">FITPOIN 4</label>
+            </div>
+            <div class="reservation-input">
+              <input type="number" name="fitpoint4" value="<%= fitpoint4 %>">
+              <p class="paragraph">vnt.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reservation-update">
+
+
+          <div class="reservation-info">
+            <div class="reservation-label">
+              <label class="small-heading">Vardas</label>
+            </div>
+            <div class="reservation-input">
+              <input type="text" name="fname" value="<%= name %>">
+            </div>
+          </div>
+          <div class="reservation-info">
+            <div class="reservation-label">
+              <label class="small-heading">El. paštas</label>
+            </div>
+            <div class="reservation-input">
+              <input type="text" name="email" value="<%= email %>">
+            </div>
+          </div>
+          <div class="reservation-info">
+            <div class="reservation-label">
+              <label class="small-heading">Telefono numeris</label>
+            </div>
+            <div class="reservation-input">
+              <input type="text" name="phone" value="<%= phone %>">
+            </div>
+          </div>
+
+          <div class="reservation-info">
+            <div class="reservation-label">
+              <label class="small-heading">Apskritis</label>
+            </div>
+            <div class="reservation-input">
+              <input type="text" name="city" value="<%= city %>">
+            </div>
+          </div>
+          <div class="reservation-info">
+            <div class="reservation-label">
+              <label class="small-heading">Būsena</label>
+            </div>
+            <div class="reservation-input">
+              <% if(state == "Gauta") { %>
+              <select name="state">
+                <option value="Gauta"> Gauta</option>
+                <option value="Vykdoma">Vykdoma</option>
+                <option value="Atšaukta">Atšaukta</option>
+                <option value="Įvykdyta">Įvykdyta</option>
+              </select>
+              <% } else if(state == "Vykdoma"){ %>
+              <select name="state">
+                <option value="Vykdoma">Vykdoma</option>
+                <option value="Gauta"> Gauta</option>
+                <option value="Atšaukta">Atšaukta</option>
+                <option value="Įvykdyta">Įvykdyta</option>
+              </select>
+              <% } else if(state == "Atšaukta"){ %>
+              <select name="state">
+                <option value="Atšaukta">Atšaukta</option>
+                <option value="Vykdoma">Vykdoma</option>
+                <option value="Gauta"> Gauta</option>
+                <option value="Įvykdyta">Įvykdyta</option>
+              </select>
+              <%} else { %>
+              <select name="state">
+                <option value="Įvykdyta">Įvykdyta</option>
+                <option value="Atšaukta">Atšaukta</option>
+                <option value="Vykdoma">Vykdoma</option>
+                <option value="Gauta"> Gauta</option>
+              </select>
+              <%}%>
+              </div>
+          </div>
+          </div>
+          <div class="reservation-update-butto">
+            <div class="message-button">
+              <a href="/dashboard"><button type="button" class="main-button">Atšaukti</button></a>
+              <button class="main-button" type="submit" name="submit">Atnaujinti</button>
+            </div>
+          </div>
+
+      </form>
+      </div>
+
+      </div>
+  </body>
+</html>

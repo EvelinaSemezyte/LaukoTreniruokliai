@@ -1,0 +1,772 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Bendrieji nustatymai */
+body {
+  background: #000000;
+  font-family: 'Montserrat', sans-serif !important;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Konteineriu nustatymai */
+.header-container, .footer-container {
+  max-width: 1366px;
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+.container-dashboard {
+  max-width: 1290px;
+  margin: auto;
+}
+
+/* Antraščių nustatymai */
+.big-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  vertical-align: top;
+}
+
+.paragraph {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 29px;
+  color: #AAAAAA;
+  padding-bottom: 9px;
+}
+
+.small-heading {
+  font-family: 'Montserrat', sans-serif;
+  padding: 5% 0 4%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 29px;
+  color: #AAAAAA;
+}
+
+.product-heading {
+  font-family: 'Montserrat', sans-serif;
+  padding: 1% 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  padding: 1% 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+/* Mygtuko nustatymai */
+.main-button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #FFFFFF;
+  background-color: Transparent;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+/* Klaidos nustatymai */
+.klaida {
+  font-family: 'Montserrat', sans-serif;
+  color: #F05454;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.klaidos-pranesimas{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Header nustatymai */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3%;
+}
+
+.brand-logo img {
+  width: 120px;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+}
+
+.toggle-button {
+  position: absolute;
+  right: 7%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 10px;
+}
+
+.toggle-button .bar {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+/* Footer nustatymai */
+.footer-container .brand-logo {
+  padding-top:3%;
+}
+.copyright{
+  padding: 0 0 3%;
+  font-size: 12px;
+}
+.copyright p{
+  padding: 0;
+  font-size: 12px;
+}
+
+/* Mobile pagrindinių klasių nustatymai */
+.main-page, .items, .about-us, .item-text, .item-features, .item-page-reservation, .item-reservation-form {
+  text-align: left;
+  padding: 7% 10%;
+}
+
+/* Pagrindinio puslapio nustatymai */
+.main-image img {
+  width: 100%;
+}
+
+.item {
+  padding: 8% 0;
+}
+
+.items img {
+  width: 100%;
+}
+
+.item-link {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #2997FF;
+}
+
+
+/* Treniruoklio puslapio nustatymai */
+.item-main-image img {
+  width: 100%;
+}
+
+.name-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item-main-image {
+  position: relative;
+  display: inline-block;
+}
+
+.item-main-image img {
+  display: block;
+}
+
+.item-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.item-image img {
+  width: 100%;
+}
+
+.name-center h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 44px;
+  display: flex;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.item-info {
+  padding: 4% 0;
+}
+
+.item-reservation {
+  text-align: center;
+}
+
+.item-reservation .big-title {
+  padding: 4%;
+}
+
+.features {
+  padding: 7% 0;
+}
+
+.features .left {
+  padding-bottom: 2%;
+}
+.item-info iframe{
+  border-color: #AAAAAA;
+}
+
+/* Apie mus puslapio nustatymai */
+.about-us-contact {
+  padding: 4% 0;
+}
+
+.about-us-contact a:hover {
+  color: #FFFFFF;
+}
+
+.email-form {
+  padding: 10% 0;
+}
+
+.email-form-section {
+  padding: 4% 0;
+}
+
+.email-form-label {
+  padding-bottom: 2%;
+}
+
+.email-form-input input, .email-form-input textarea {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.email-form-input input {
+  border-radius: 50px;
+}
+
+.email-form-input textarea {
+  border-radius: 10px;
+}
+
+.email-form-button {
+  padding: 4% 0;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+}
+
+/* Rezervacijos puslapio nustatymai */
+.reservation-info, .reservation-label {
+  padding: 5% 0;
+}
+
+.all-rerservation-info, .message-button{
+  width: 100%;
+  float: none;
+  text-align: center;
+}
+.message-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message-button button {
+  margin: 5px;
+}
+.reservation-model input, .reservation-info input, .reservation-info select {
+  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 250px;
+}
+.reservation-float {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.reservation-float .reservation-model {
+  width: 100%;
+  padding: 2% 0;
+}
+.item-reservation-form {
+  text-align: center;
+}
+
+.reservation-input .paragraph {
+  margin: 0;
+  font-size: 20px;
+}
+
+.reservation-model .small-heading, .item-reservation-form .small-heading {
+  color: #FFFFFF;
+}
+
+.item-reservation-form h2 {
+  font-size: 25px;
+}
+
+input[type=number] {
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 70px;
+}
+
+/* Prisijungimo, registracijos, slaptažodžio keirimo langų nustatymai */
+#sign {
+  padding: 10% 0;
+  text-align: center;
+}
+
+#sign .small-heading {
+  color: #FFFFFF;
+}
+
+/* Dashboard nustatymai */
+.dashboard-buttons {
+  width: 100%;
+  padding: 7% 0;
+}
+
+.dashboard {
+  width: 100%;
+  padding: 7% 0%;
+  text-align: center;
+}
+
+.main-function-button {
+  float: none;
+  text-align: center;
+  padding: 3% 0;
+}
+
+.butoon-height {
+  width: auto;
+  padding: 0 15px;
+}
+
+.delete-update-button {
+  width: 80px;
+}
+
+.dashboard-new-resrvation {
+  padding: 3% 0;
+}
+
+.logout-button {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.delete-button {
+  background-color: #F05454;
+}
+
+.dashboard-cancel-order-button {
+  padding: 3% 0;
+}
+
+.dashboard-cancel-order-button button {
+  width: 120px;
+}
+
+.table {
+  padding: 4% 0%;
+  overflow: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 16.2px;
+  color: #FFFFFF;
+}
+
+.table table {
+  margin: 0 auto;
+}
+
+table, th, td {
+  text-align: center;
+  padding: 6px;
+  border-collapse: collapse;
+}
+
+/* Modulio nustatymai */
+.modal {
+  padding: 2%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 95%;
+  overflow: auto;
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  width: 80%;
+}
+
+/* Mudulio uždarymo mygtukas */
+.close {
+  float: right;
+  padding-right: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.close:hover,
+.close:focus {
+  color: #F05454;
+  cursor: pointer;
+}
+
+.container1 {
+  background-color: #000000;
+  padding: 5%;
+  text-align: center;
+  border: 1px solid;
+}
+
+.container1 p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 29px;
+  padding-bottom: 9px;
+}
+
+.not {
+  width: 100%;
+  float: none;
+  text-align: center;
+}
+
+.reservation-update-buttons {
+  width: 100%;
+  float: none;
+  text-align: center;
+  padding: 2% 0;
+}
+
+@media(min-width: 426px) {
+  .reservation-info {
+    padding: 2% 15%;
+  }
+
+  .message-button button {
+    margin: 15px 5px;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 1% auto 2% auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 540px) {
+  .modal {
+    padding: 30%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 50px;
+  }
+}
+
+@media(min-width: 700px) {
+  .name-center h2 {
+    font-size: 50px;
+  }
+  .reservation-update-buttons {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding: 120% 0;
+  }
+
+  .main-function-button {
+    float: right;
+    padding: 0 2%;
+  }
+
+  .item-reservation-form .reservation-info {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 4% 0;
+  }
+
+  .item-reservation-form {
+    text-align: center;
+    align-items: center;
+  }
+
+  .reservation-update {
+    width: 100%;
+  }
+  .reservation-float {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reservation-float .reservation-model {
+    float: left;
+    width: 33.33%;
+  }
+  .reservation-update-buttons {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding: 110% 0;
+  }
+
+  .reservation-label, .resrvation-input {
+    float: none;
+    text-align: center;
+  }
+
+  .reservation-info-change-psw {
+    padding: 2% 20% !important;
+  }
+
+  .item-page-reservation {
+    text-align: center;
+  }
+
+
+  iframe {
+    height: 300px;
+  }
+  .item {
+    padding: 3% 0;
+}
+.item-image{
+
+  width: 95%;
+  margin: auto;
+}
+
+}
+
+@media(max-width: 800px) {
+
+  /* Header nustatymai */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .brand-logo {
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    width: 100%;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background-color: black;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    line-height: 29px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    z-index: 10;
+  }
+
+  /* Navigacijos nuorodu animacija */
+  .navbar-links.active {
+    animation-fill-mode: both;
+    -webkit-animation: fadein 1s;
+    z-index: 10;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+
+    25% {
+      opacity: 0.25;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    75% {
+      opacity: 0.75;
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Burgerio mygtuko pasisukimo nustatymai */
+  .toggle .bar1 {
+    transform: rotate(-45deg) translate(0px, 6px);
+  }
+
+  .toggle .bar2 {
+    transform: rotate(45deg) translate(0px, -6px);
+  }
+}
+
+@media(min-width: 800px) {
+  .main-page, .items, .about-us, .item-text, .item-features, .item-page-reservation, .item-reservation-form {
+    text-align: center;
+    padding: 2% 10%;
+  }
+
+  .email-form {
+    padding: 10% 20%;
+  }
+
+  .email-form-section {
+    padding: 2% 0;
+  }
+
+  .email-form-label {
+    padding-bottom: 1%;
+  }
+}
+
+@media(min-width: 980px) {
+  .about-us-contact {
+    padding: 5% 7%;
+    float: left;
+    width: 250px;
+    text-align: right;
+  }
+
+  .reservation-update-buttons {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding: 100% 0;
+  }
+
+  .reservation-info-change-psw {
+    padding: 2% 25% !important;
+  }
+  .row{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .row .item{
+    padding: 2%;
+    float: left;
+    width: 33.33%;
+  }
+}

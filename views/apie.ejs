@@ -1,0 +1,57 @@
+<%- include("partials/header") -%>
+
+<div class="container">
+  <div class="about-us">
+    <h1 class="big-title">Apie mus</h1>
+    <p class="paragraph">Mes esame FITPOINT ir mums liūdna žiūrėti į treniruoklių pardavėjus, kurie giriasi savo daugiamete patirtimi, tačiau siūlo ribotus ir nepraktiškus produktus savo klientams. Mes ne tokie. Kaip ir mūsų sukurti treniruokliai. FITPOINT – tai naujas produktas rinkoje, sukurtas ne diletantų, o tikrų profesionalų. Remiantis ne pasenusiais standartais, o kasdiene praktika ir mokslo žiniomis.</p>
+<p class="paragraph">FITPOINT komandą sudaro žmonės, kurie gyvena ir kvėpuoja sportu bei sveika gyvensena. Tai atsidavę kūno kultūros, kineziterapijos ir biomedicinos mokslų profesionalai, kurie sugeba apjungti naujausias teorines žinias, kasdienę praktiką ir Lietuvos bei Europos čempionatų prizininkų patirtį. Todėl mes žinome, ko reikia, kad žmonės taptų sveikesni, daugiau judėtų ir jaustųsi kaip tikri čempionai. Ir FITPOINT treniruokliai yra geriausia šios mūsų vizijos išraiška.
+</p>
+    <div class="contact-us">
+      <div class="about-us-contact">
+        <a class="paragraph" href="tel:+37062612612">+37062612612</a>
+      </div>
+      <div class="about-us-contact">
+        <a class="paragraph" href="mailto:sigmas@gmail.com">sigmas@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="email-form">
+      <h1 class="big-title">Turite klausimų?</h1>
+      <form class="" action="/apiemus" method="post">
+        <div class="email-form-section">
+          <div class="email-form-label">
+            <label class="small-heading" for="">El. paštas:</label>
+          </div>
+          <div class="email-form-input">
+            <input type="text" name="email" value="<%= typeof email != 'undefined' ? email : '' %>">
+          </div>
+        </div>
+        <div class="email-form-section">
+          <div class="email-form-label">
+            <label class="small-heading" for="">Tema:</label>
+          </div>
+          <div class="email-form-input">
+            <input type="text" name="subject" value="<%= typeof subject != 'undefined' ? subject : '' %>">
+          </div>
+        </div>
+        <div class="email-form-section">
+          <div class="email-form-label">
+            <label class="small-heading" for="">Žinutė:</label>
+          </div>
+          <div class="email-form-input">
+            <textarea name="message" rows="10"> <%= typeof message != 'undefined' ? message : '' %> </textarea>
+          </div>
+        </div>
+        <div class="email-form-button">
+          <%- include("partials/messages") -%>
+          <button class="main-button" type="submit">Siųsti</button>
+        </div>
+      </form>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.44997653769036!2d24.34366994542889!3d55.726077326839224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e63221b25a42f5%3A0x10f9f01a70925f05!2sUAB%20%22Sigmas%22!5e0!3m2!1sen!2slt!4v1604067833272!5m2!1sen!2slt"
+      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</div>
+
+<%- include("partials/footer") -%>

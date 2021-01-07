@@ -1,0 +1,48 @@
+  <%- include("partials/header-das") -%>
+  <div class="container">
+
+
+    <section id="sign">
+      <h1 class="big-title">REGISTRACIJA</h1>
+      <form class="" action="/users/register" method="post">
+
+
+        <div class="reservation-info">
+          <div class="duomenys">
+            <label class="small-heading" for="email">El. paštas:</label>
+          </div>
+          <div class="reservation-input">
+            <input name="email" value="<%= typeof email != 'undefined' ? email : '' %>">
+          </div>
+        </div>
+
+        <div class="reservation-info">
+          <div class="duomenys">
+            <label class="small-heading" for="psw">Slaptažodis:</label>
+          </div>
+          <div class="reservation-input">
+            <input type="password" name="password" placeholder="Sukurti Slaptažodį" value="<%= typeof password != 'undefined' ? password : '' %>">
+          </div>
+        </div>
+
+        <div class="reservation-info">
+          <div class="duomenys">
+            <label class="small-heading" for="psw">Patvirtinti:</label>
+          </div>
+          <div class="reservation-input">
+            <input type="password" name="password1" placeholder="Pakartoti Slaptažodį" value="<%= typeof password != 'undefined' ? password : '' %>">
+          </div>
+        </div>
+        <div class="klaidos-pranesimas">
+          <%- include("partials/messages") -%>
+        </div>
+        <div class="message-button">
+
+          <a href="/dashboard"><button type="button" class="main-button">Atšaukti</button></a>
+          <button class="main-button" type="submit">Patvirtinti</button>
+        </div>
+
+      </form>
+    </section>
+  </div>
+  <%- include("partials/footer") -%>

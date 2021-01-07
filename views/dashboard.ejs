@@ -1,0 +1,69 @@
+  <%- include("partials/header-das") -%>
+
+  <div class="container-dashboard">
+    <div class="dashboard-buttons">
+      <div class="main-function-button">
+        <a href="/users/logout"><button class="main-button butoon-height logout-button">Atsijungti</button></a>
+      </div>
+      <div class="main-function-button">
+        <a href="/users/changepsw"><button class="main-button butoon-height">Keisti slaptažodį</button></a>
+      </div>
+      <div class="main-function-button">
+        <a href="/users/register"><button class="main-button butoon-height">Naujas darbuotojas</button></a>
+      </div>
+    </div>
+    <div class="dashboard">
+      <h1 class="big-title">Vidinis darbuotojų puslapis</h1>
+      <div class="dashboard-new-resrvation">
+        <a href="users/reservation"><button class="main-button butoon-height" type="submit">Pridėti užsakymą</button></a>
+      </div>
+      <div class="table">
+        <table>
+          <tr>
+            <th>FITPOINT8</th>
+            <th>FITPOINT6</th>
+            <th>FITPOINT4</th>
+            <th>Vardas</th>
+            <th>El. paštas</th>
+            <th>Telefono numeris</th>
+            <th>Apskritis</th>
+            <th>Užsakymo data</th>
+            <th>Užsakymo būsena</th>
+            <th>Ištrinti</th>
+            <th>Keisti</th>
+          </tr>
+          <% reservation.forEach(function(reservation) { %>
+          <tr>
+            <td> <%= reservation.fitpoint8 %> </td>
+            <td> <%= reservation.fitpoint6 %> </td>
+            <td> <%= reservation.fitpoint4 %> </td>
+            <td> <%= reservation.name %> </td>
+            <td> <%= reservation.email %> </td>
+            <td> <%= reservation.phone %> </td>
+            <td> <%= reservation.city %> </td>
+            <td> <%= reservation.date %> </td>
+            <td> <%= reservation.state %> </td>
+            <td><button class="main-button delete-update-button" onclick="document.getElementById('istrinti<%= reservation._id %>').style.display='block'" value="reservation._id"><i class="far fa-trash-alt"></i></button></td>
+            <div id="istrinti<%= reservation._id %>" class="modal">
+              <form class="modal-content" action="/">
+                <span onclick="document.getElementById('istrinti<%= reservation._id %>').style.display='none'" class="close" title="Close Modal">×</span>
+                <div class="container1">
+                  <h1 class="title">IŠTRINTI UŽSAKYMĄ</h1>
+                  <p>Ar tikrai norite ištrinti užsakymą?</p>
+                  <div class=" modal-button">
+                    <button class="main-button" type="button" onclick="document.getElementById('istrinti<%= reservation._id %>').style.display='none'">Atšaukti</button>
+                    <a href="/users/delete/<%= reservation._id %>"><button class="main-button delete-button" type="button" name="button">Ištrinti</button></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <form class="" action="/users/update/<%= reservation._id %>" method="get">
+              <td> <button class="main-button delete-update-button" type="submit" name="submit"><i class="fas fa-pen"></i></button></td>
+            </form>
+          </tr>
+          <% }); %>
+        </table>
+      </div>
+    </div>
+  </div>
+  <%- include("partials/footer") -%>

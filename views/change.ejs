@@ -1,0 +1,34 @@
+  <%- include("partials/header-das") -%>
+  <div class="container">
+  <section id="sign">
+    <h1 class="big-title">Keisti slaptažodį</h1>
+    <form class="pass-login" action="/users/changepsw" method="post">
+      <div class="reservation-info reservation-info-change-psw">
+        <div class="duomenys">
+        <label class="small-heading" for="psw">Naujas slaptažodis:</label>
+        </div>
+        <div class="reservation-input">
+          <input type="password" name="changepassword1" value="<%= typeof password != 'undefined' ? password : '' %>" >
+        </div>
+      </div>
+      <div class="reservation-info reservation-info-change-psw">
+        <div class="duomenys">
+        <label class="small-heading" for="psw">Pakartoti slaptažodį:</label>
+        </div>
+        <div class="reservation-input">
+          <input type="password" name="changepassword"
+                value="<%= typeof password != 'undefined' ? password : '' %>" >
+        </div>
+      </div>
+      <div class="klaidos-pranesimas">
+        <%- include("partials/messages") -%>
+      </div>
+        <div class="message-button">
+          <a href="/dashboard"><button type="button" class="main-button">Atšaukti</button></a>
+          <button type="submit" class="main-button">Patvirtinti</button>
+        </div>
+
+    </form>
+  </section>
+  </div>
+<%- include("partials/footer") -%>

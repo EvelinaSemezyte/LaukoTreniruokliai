@@ -1,0 +1,108 @@
+<%- include("partials/header") -%>
+
+<div class="container">
+  <div class="item-page-reservation">
+    <h1 class="big-title">Treniruoklio užsakymas</h1>
+    <p class="paragraph">Išsirinkite norimus treniruoklius ir palikite savo kontaktinę informaciją, kad mes galėtume su Jumis susisiekti dėl detalesnės informacijos.</p>
+  </div>
+  <div class="item-reservation-form">
+    <form class="" action="/rezervacija" method="post">
+      <h2 class="small-heading">Treniruoklio modelis ir kiekis</h2>
+      <div class="reservation-float">
+        <div class="reservation-model">
+          <div class="duomenys">
+            <label class="small-heading">FITPOINT 8</label>
+          </div>
+          <div class="reservation-input">
+            <input type="number" id="quantity" name="Mega6000Pro" value="<%= typeof Mega6000Pro != 'undefined' ? Mega6000Pro : '' %>" min="0" max="10">
+            <p class="paragraph">vnt.</p>
+          </div>
+        </div>
+
+        <div class="reservation-model">
+          <div class="duomenys">
+            <label class="small-heading">FITPOINT 6</label>
+          </div>
+          <div class="reservation-input">
+            <input type="number" id="quantity" name="Mega3000Pro" value="<%= typeof Mega3000Pro != 'undefined' ? Mega3000Pro : '' %>" min="0" max="10">
+            <p class="paragraph">vnt.</p>
+          </div>
+        </div>
+
+        <div class="reservation-model">
+          <div class="duomenys">
+            <label class="small-heading">FITPOINT 4</label>
+          </div>
+          <div class="reservation-input">
+            <input type="number" id="quantity" name="Mega2000" value="<%= typeof Mega2000 != 'undefined' ? Mega2000 : '' %>" min="0" max="10">
+            <p class="paragraph">vnt.</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="small-heading">Jūsų kontaktinė informacija</h2>
+      <div class="all-rerservation-info">
+        <div class="reservation-info">
+          <div class="duomenys">
+            <label class="small-heading" for="name">Vardas</label>
+          </div>
+          <div class="reservation-input">
+            <input type="name" name="fname" value="<%= typeof fname != 'undefined' ? fname : '' %>">
+          </div>
+        </div>
+
+        <div class="reservation-info">
+          <div class="duomenys">
+            <label class="small-heading" for="email">El. paštas</label>
+          </div>
+          <div class="reservation-input">
+            <input name="email" value="<%= typeof email != 'undefined' ? email : '' %>">
+          </div>
+
+        </div>
+
+        <div class="reservation-info">
+          <div class="duomenys">
+            <label class="small-heading" for="phone">Telefono numeris</label>
+          </div>
+          <div class="reservation-input">
+            <input type="tel" placeholder="+370..." name="phone" value="<%= typeof phone != 'undefined' ? phone : '' %>">
+          </div>
+
+        </div>
+        <div class="reservation-info">
+          <div class="duomenys">
+            <label class="small-heading" for="city">Apskritis</label>
+          </div>
+          <div class="reservation-input">
+            <select name="cities">
+              <option value="Vilniaus">Vilniaus</option>
+              <option value="Kauno">Kauno</option>
+              <option value="Klaipėdos">Klaipėdos</option>
+              <option value="Šiauliu">Šiaulių</option>
+              <option value="Panevėžio">Panevėžio</option>
+              <option value="Alytaus">Alytaus</option>
+              <option value="Marijampoles">Marijampolės</option>
+              <option value="Taurages">Tauragės</option>
+              <option value="Telsiu">Telšių</option>
+              <option value="Utenos">Utenos</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="klaidos-pranesimas">
+        <%- include("partials/messages") -%>
+      </div>
+
+      <div class="message-button">
+        <button type="submit" class="main-button">Užsakyti</button>
+      </div>
+
+
+    </form>
+  </div>
+
+
+</div>
+
+<%- include("partials/footer") -%>
